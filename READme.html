@@ -1,0 +1,32 @@
+Insertion Sort Algorithm Implementation
+=====================================
+
+Overview
+--------
+
+This is a JavaScript implementation of the Insertion Sort algorithm, a simple and efficient sorting algorithm that works by dividing the input array into a sorted and an unsorted region, and repeatedly inserting the next element from the unsorted region into the sorted region in the correct position.
+
+Algorithm Description
+--------------------
+
+The Insertion Sort algorithm works as follows:
+
+1. Start from the second element of the array (index 1), since the first element is trivially sorted.
+2. For each element in the array, store it as the "key" to be inserted into the sorted portion of the array.
+3. Initialize the index of the previous element to `i - 1`.
+4. Shift elements greater than the key to the right to make room for the key.
+5. Insert the key into its correct position in the sorted portion of the array.
+6. Repeat steps 2-5 until the entire array is sorted.
+
+Implementation
+--------------
+
+The implementation is provided in the `insertionSort.js` file, which exports a single function `insertionSort` that takes an array as input and returns the sorted array.
+
+Example Usage
+-------------
+
+```javascript
+const array = [5, 2, 8, 3, 1, 6, 4];
+const sortedArray = insertionSort(array);
+console.log(sortedArray); // [1, 2, 3, 4, 5, 6, 8]
